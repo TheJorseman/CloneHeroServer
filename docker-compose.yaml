@@ -3,7 +3,10 @@ services:
   clone_hero_server:
     image: cfunseth/clone-hero-server
     ports:
-      - 14242:14242
+    - target: 14242
+      published: 14242
+      protocol: udp
+      mode: host
     restart: unless-stopped
     environment:
       - NAME=lostreserizos
