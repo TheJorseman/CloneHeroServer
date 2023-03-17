@@ -2,6 +2,10 @@ version: "3.7"
 services:
   clone_hero_server:
     image: cfunseth/clone-hero-server
+    volumes:
+      - type: bind
+        source: ./settings.ini
+        target: /usr/src/clonehero/settings.ini
     ports:
     - target: 14242
       published: 14242
