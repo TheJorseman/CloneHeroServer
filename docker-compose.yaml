@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  clone_hero_server:
+    image: cfunseth/clone-hero-server
+    ports:
+      - 14242:14242
+    restart: unless-stopped
+    environment:
+      - NAME=lostreserizos
+      - PASSWORD=chichotas
+    
