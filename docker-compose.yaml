@@ -13,6 +13,6 @@ services:
       mode: host
     restart: unless-stopped
     environment:
-      - NAME=lostreserizos
+      - NAME=aaalostreserizos
       - PASSWORD=chichotas
     
