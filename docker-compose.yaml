@@ -14,5 +14,5 @@ services:
     restart: unless-stopped
     environment:
       - NAME=aaalostreserizos
-      - PASSWORD=effyculona
+      - PASSWORD=chichitas
     
